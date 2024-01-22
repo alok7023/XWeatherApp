@@ -1,5 +1,5 @@
 import SearchBar from "./SearchBar";
-import WeatherCard from "./WeatherCard";
+import WeatherDisplay from "./WeatherDisplay";
 import "./App.css";
 import { useState } from "react";
 // const API_KEY = `a10943187fc8421196281900242201`;
@@ -9,9 +9,9 @@ function App() {
     setCity(searchCity);
   };
   return (
-    <div>
+    <div className="App">
       <SearchBar onSearch={handleSearch} />
-      <WeatherCard city={city} />
+      <WeatherDisplay city={city} />
     </div>
   );
 }

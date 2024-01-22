@@ -4,7 +4,7 @@ import "./App.css";
 const Searchbar = ({ onSearch }) => {
   const [city, setCity] = useState("");
 
-  const handleSearch = (e) => {
+  const handleSearch = () => {
     onSearch(city);
   };
 
@@ -17,9 +17,7 @@ const Searchbar = ({ onSearch }) => {
         placeholder="Enter city name"
         className="search-input"
       />
-      <button onClick={handleSearch} className={"search-btn"}>
-        Search
-      </button>
+      <button onClick={handleSearch}>Search</button>
     </div>
   );
 };
