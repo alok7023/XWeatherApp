@@ -14,7 +14,7 @@ const Searchbar = ({ onSearch }) => {
         type="text"
         value={city}
         onChange={(e) => setCity(e.target.value)}
-        placeholder="Enter the city"
+        placeholder="Enter city name"
         className="search-input"
       />
       <button onClick={handleSearch} className={"search-btn"}>
