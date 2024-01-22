@@ -9,7 +9,7 @@ function App() {
     setCity(searchCity);
   };
   return (
-    <div className="App">
+    <div>
       <SearchBar onSearch={handleSearch} />
       <WeatherCard city={city} />
     </div>
